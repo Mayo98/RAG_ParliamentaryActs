@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Atti Parlamentari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RAG Atti Parlamentari</h1>
+        <div class="info-box">
+            <p><strong>Come usare la ricerca:</strong></p>
+            <ul>
+                <li>Seleziona un'opzione per la tua ricerca</li>
+                <li>Fai la tua domanda.</li>
+                <li>Clicca su "Cerca" per ottenere i risultati.</li>
+                <li>I risultati si basano sui documenti parlamentari disponibili.</li>
+            </ul>
+        </div>
+
+        <h2>Scegli un'opzione per la tua ricerca</h2>
+        <select id="optionSelect">
+            <option value="">-- Seleziona un'opzione --</option>
+            <option value="Ricerca opinione di un deputato">Ricerca opinione di un deputato</option>
+            <option value="Informazioni su una proposta di legge">Contenuto di una proposta di legge</option>
+            <option value="Opinioni di un partito politico">Opinioni di un partito politico</option>
+        </select>
+        
+        <!-- Contenitore dinamico per input (listbox o testo) -->
+        <div id="dynamicInputContainer"></div>
+        
+        <input type="text" id="queryInput" placeholder="Scrivi la tua domanda...">
+        <button onclick="sendQuery()">Cerca</button>
+        <div id="results"></div>
+        <script src="script.js"></script>
+        </body>
+        </html>

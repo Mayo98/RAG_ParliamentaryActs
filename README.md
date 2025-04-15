@@ -15,7 +15,7 @@ Application for questioning parliamentary acts using RAG and LLM. Developed as a
 
 **RAG**
 
-4. retrieval.py: retrieves top-k most relevant chunk from the vectorstore and pass them to LLM to generate response.
+4. retrieval.py: retrieves top-k most relevant chunk from the vectorstore and pass them to LLM to generate response. Called by server.py, do not run alone if you're using the interface.
 
 ** RUN THE INTERFACE **
 - run server/server.py in the remote host to start the server
